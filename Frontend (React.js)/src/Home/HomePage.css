@@ -1,0 +1,403 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: white;
+}
+
+.custom-table-container {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.custom-data-table {
+  flex-grow: 1;
+  width: 100%;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-data-table .MuiDataGrid-root {
+  height: calc(100% - 40px);
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-data-table .MuiDataGrid-window {
+  flex-grow: 1;
+  overflow-y: scroll !important;
+}
+
+.custom-data-table .MuiDataGrid-footerContainer {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+
+.MuiDataGrid-root,
+.MuiDataGrid-columnHeader,
+.MuiDataGrid-cell {
+  color: white !important;
+}
+
+.MuiDataGrid-root {
+  background-color: #7a7878;
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.MuiDataGrid-columnHeader {
+  background-color: #6f6c6c;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.MuiDataGrid-checkboxInput {
+  color: #ffffff;
+}
+
+.MuiDataGrid-root .MuiDataGrid-columnHeaderCheckbox .MuiIconButton-root {
+  color: #ffffff !important;
+  background-color: #6f6c6c !important;
+}
+
+
+.abc-logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.invoice-list {
+  position: absolute !important;
+}
+
+.invoice-list-text {
+  position: fixed;
+  text-align: left;
+  margin-top: 4ch;
+  color: red;
+  font-weight: bolder;
+  font-size: large;
+  white-space: nowrap;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.footer p {
+  color: #6f6c6c;
+}
+
+.footer p span {
+  color: rgba(10, 10, 236, 0.84);
+}
+
+.table-section {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  background-color:#6f6c6c; 
+  margin-top: 0;
+  border-bottom: 2px solid #6f6c6c; /* Add a bottom border */
+  align-items: center;
+}
+
+.table-section-item {
+  margin-right: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: text-decoration 0.3s ease;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  margin-left: 1px; /* Add this line to align items on the left side */
+  position:relative;
+  
+}
+
+
+.table-section-item.active {
+  text-decoration: underline;
+  color: #2196f3;
+}
+
+.table-section-item:hover {
+  text-decoration: underline;
+}
+
+.custom-data-table {
+  flex-grow: 1;
+  width: 100%;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 16px;
+  height: calc(100% - 55px); /* Adjust the height calculation based on your layout */
+}
+
+.custom-data-table .MuiDataGrid-root {
+  height: calc(100% - 30px); /* Adjust the height to account for the margin change */
+}
+
+.popup-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.popup-window.active {
+  display: block;
+}
+
+.popup-content {
+  padding: 16px;
+}
+
+.popup-header {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.popup-fields {
+  margin-bottom: 16px;
+}
+
+.popup-field {
+  margin-bottom: 8px;
+}
+
+.popup-field label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popup-actions button {
+  padding: 8px 16px;
+  background-color: #2196f3;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-actions button:hover {
+  background-color: #1976d2;
+}
+
+.popup-charts {
+  display: flex;
+}
+
+.popup-chart {
+  flex: 1;
+  height: 200px;
+  background-color: #f5f5f5;
+  margin-right: 8px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px;
+  background-color: transparent;
+  border: none;
+  color: #2196f3;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-data-table {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.table-actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-left: 1px;
+  background-color:white;
+}
+
+.action-button {
+  margin-left: 1px;
+  background-color:#7a7878;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  font-weight:500;
+}
+
+.action-button:hover {
+  background-color:rgba(219, 78, 26, 0.837);
+}
+
+.action-buttons-container {
+  display: flex;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right:10px;
+}
+
+.search-bar input {
+  margin-right: 8px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  background-color:lightgreen;
+  color: #000000;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight:500;
+}
+
+.search-bar button:hover {
+  background-color:#7a7878;
+}
+
+
+.popup-window1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.popup-window1 p {
+  margin: 0;
+  padding: 5px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 18px;
+}
+
+.popup-window1 button {
+  margin: 2px;
+  padding: 10px 20px;
+  background-color: #2273e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup-window1 button:hover {
+  background-color: #7a7878;
+}
+
+.popup-window1 .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.popup-window2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  max-width: 400px; /* Set a maximum width for responsiveness */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.popup-window2 p {
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.popup-window2 button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #2273e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.popup-window2 button:hover {
+  background-color: #7a7878;
+}
+
+.popup-window2 .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
